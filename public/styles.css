@@ -3,8 +3,7 @@
   make it cohesive and visually appealing with each section appearing distinct.
   The main heading is in white text with a large, darkened background photo
   while the section with forms has a white background and the inventory section
-  has a grey background. The forms have a shadow border and blue buttons, and
-  the inventory table is white with a magenta header.
+  has a grey background.
 */
 body {
   padding: 0px;
@@ -61,7 +60,7 @@ button {
   margin-top: 30px;
   width: 100%;
   height: 50px;
-  background-color: #1249C0;
+  background-color: #2E4CBB;
   border-radius: 25px;
   cursor: pointer;
 }
@@ -72,7 +71,7 @@ table {
 
 th {
   color: #EEE;
-  background-color: #8B008B;
+  background-color: #726DA8;
   height: 40px;
 }
 
@@ -132,12 +131,12 @@ header p {
 }
 
 header a {
-  color: #17C9FF;
+  color: #A0D2DB;
   text-decoration: none;
 }
 
 header a:visited {
-  color: #FF00FF;
+  color: #C490D1;
 }
 
 header a:hover {
