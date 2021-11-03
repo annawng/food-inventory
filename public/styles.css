@@ -1,0 +1,172 @@
+/*
+  This CSS file contains styles which are applied to the food inventory page to
+  make it cohesive and visually appealing with each section appearing distinct.
+  The main heading is in white text with a large, darkened background photo
+  while the section with forms has a white background and the inventory section
+  has a grey background. The forms have a shadow border and blue buttons, and
+  the inventory table is white with a magenta header.
+*/
+body {
+  padding: 0px;
+}
+
+header {
+  height: 100vh;
+  background-image: url("img/header-background.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form {
+  width: fit-content;
+  margin: 50px auto;
+  padding: 20px 20px 10px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px #DDD;
+}
+
+h1 {
+  padding-top: 10vh;
+  padding-left: 15vh;
+  font-size: 200px;
+  width: 100px;
+  word-wrap: normal;
+  line-height: 130px;
+  font-family: 'Katibeh', cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #555 solid 1px;
+  width: 300px;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  margin: auto;
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: #1249C0;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+table {
+  margin: 30px auto 0px;
+}
+
+th {
+  color: #EEE;
+  background-color: #8B008B;
+  height: 40px;
+}
+
+td {
+  background-color: #FFF;
+}
+
+th:first-child {
+  border-top-left-radius: 20px;
+}
+
+th:last-child {
+  border-top-right-radius: 20px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #DDD;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+th, td {
+  padding: 10px 20px;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+body, button {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+body, h1 {
+  margin: 0px;
+}
+
+h1, button, header p {
+  color: #FFF;
+}
+
+form p {
+  text-align: right;
+}
+
+header p {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+header a {
+  color: #17C9FF;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #FF00FF;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+input, header p {
+  display: block;
+}
+
+header p, form p {
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+#inventory {
+  color: #222;
+  background-color: #DDD;
+  min-height: 50vh;
+  padding: 50px;
+}
+
+span, form p, #error {
+  color: #EE0000;
+}
+
+table, th, td, section h2, #message, #error {
+  text-align: center;
+}

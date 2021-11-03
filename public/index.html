@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  This HTML file displays a single-page food inventory with three sections: the
+  header, forms for the user to enter their name and to add items to the
+  inventory, and the inventory itself, which is initially not visible but
+  appears as the user adds items.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Food Inventory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Food Inventory</h1>
+      <p>
+        <a href="https://www.flickr.com/photos/stephen-oung/5332718999">Photo</a> by Stephen Oung /
+        <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+      </p>
+    </header>
+    <section id="error-section"></section>
+    <form id="name-form">
+      <label for="name">Enter your name</label>
+      <input type="text" id="name" name="name" autocomplete="off" required>
+      <button>Submit</button>
+    </form>
+    <form id="item-form">
+      <h2>Add an item</h2>
+      <label for="item">Item<span>*</span></label>
+      <input type="text" id="item" name="item" autocomplete="off" required>
+      <label for="category">Category</label>
+      <input type="text" id="category" name="category" autocomplete="off">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" step="1">
+      <label for="purchase">Purchase Date</label>
+      <input type="date" id="purchase" name="purchase-date">
+      <label for="expiration">Expiration Date</label>
+      <input type="date" id="expiration" name="exp-date">
+      <button>Submit</button>
+      <p>*Required</p>
+    </form>
+    <section id="inventory">
+      <h2>Your Inventory</h2>
+      <p id="message">No items added yet!</p>
+      <table class="hidden">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Purchase Date</th>
+            <th>Expiration Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </body>
+</html>
