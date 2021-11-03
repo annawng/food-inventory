@@ -110,23 +110,3 @@ Possible 400 (invalid request) error (plain text):
 **Error Handling:**
 Possible 400 (invalid request) error (plain text):
 - If given an invalid row number (e.g. not a number or a number greater than or equal to the number of rows or less than 0), returns an error with the message `invalid row number`.
-
-## Customize inventory name
-**Request Format:** /name/:name
-
-**Request Type:** GET
-
-**Returned Data Format**: Plain Text
-
-**Description:** Returns a customized version of the food inventory's name using the given name.
-
-**Example Request:** /name/Anna
-
-**Example Response:**
-
-```
-Anna's Food Inventory
-```
-
-**Error Handling:**
-N/A

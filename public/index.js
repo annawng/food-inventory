@@ -15,7 +15,6 @@
    */
   function init() {
     getPreviousInventory();
-    id("name-form").addEventListener("submit", displayName);
     id("item-form").addEventListener("submit", addItem);
   }
 
@@ -31,21 +30,6 @@
       .then(res => res.json())
       .then(loadInventory)
       .catch(handleError);
-  }
-
-  /**
-   * Displays the name entered by the user in the form as part of the main
-   * heading of the page.
-   * @param {Object} event - the event object
-   */
-  function displayName(event) {
-    event.preventDefault();
-    fetch("/name/" + id("name").value)
-      .then(statusCheck)
-      .then(res => res.text())
-      .then(updateInventoryName)
-      .catch(handleError);
-    clearForm("name-form");
   }
 
   /**
@@ -92,14 +76,6 @@
     if (inventory.length !== 0 && qs("table").classList.contains("hidden")) {
       toggleInventory();
     }
-  }
-
-  /**
-   * Displays the string with the user-entered name as the name of the food inventory.
-   * @param {Object} res - the response from the API containing the string to display
-   */
-  function updateInventoryName(res) {
-    qs("h1").textContent = res;
   }
 
   /**

@@ -59,15 +59,6 @@ app.post("/remove", function(req, res) {
   }
 });
 
-/**
- * Takes the name sent as a path parameter and sends back a plain-text string
- * containing that name, indicating that it is their food inventory.
- */
-app.get("/name/:name", function(req, res) {
-  let name = req.params.name;
-  res.type("text").send(name + "'s Food Inventory");
-});
-
 /* -------------------- Helper Functions -------------------- */
 /**
  * Checks whether the object sent via the request body is a valid item to be
